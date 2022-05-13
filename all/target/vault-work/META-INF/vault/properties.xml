@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>balentine - All</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="created">2022-03-08T10:21:36.029Z</entry>
+<entry key="groupId">com.balentine</entry>
+<entry key="name">balentine.all</entry>
+<entry key="description">All content package for balentine</entry>
+<entry key="artifactId">balentine.all</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.balentine</entry>
+</properties>

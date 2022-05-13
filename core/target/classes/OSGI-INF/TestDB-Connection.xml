@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.4.0" name="TestDB Connection" enabled="true" immediate="true" activate="init" init="1">
+  <service>
+    <provide interface="com.balentine.core.db.TestDbConnection"/>
+  </service>
+  <reference name="$000" interface="com.day.commons.datasource.poolservice.DataSourcePool" parameter="0"/>
+  <implementation class="com.balentine.core.db.TestDbConnectionImpl"/>
+</scr:component>

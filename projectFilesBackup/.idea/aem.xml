@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AemPluginSettingsManager">
+    <option name="jcrMountpoint" value="/crx/server" />
+  </component>
+  <component name="OsgiSettingsManager">
+    <option name="osgiFrameworkStoragePath" value="\launchpad\felix" />
+  </component>
+  <component name="aem">
+    <option name="aemInstances">
+      <list>
+        <AemInstance>
+          <option name="host" value="http://localhost:4502" />
+          <option name="name" value="DEV Author" />
+          <option name="path" value="D:\AEM\crx-quickstart" />
+          <option name="uuid" value="24b5c9ef-a86f-4d99-9774-818c2f3fe53c" />
+        </AemInstance>
+      </list>
+    </option>
+    <option name="selectedIndex" value="0" />
+  </component>
+</project>

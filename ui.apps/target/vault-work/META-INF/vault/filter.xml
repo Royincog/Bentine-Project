@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/balentine/clientlibs"/>
+    <filter root="/apps/balentine/components"/>
+    <filter root="/apps/balentine/i18n"/>
+</workspaceFilter>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.balentine.core.servlets.HandleBarsServlet">
+  <property name="sling.servlet.resourceTypes" type="String">balentine/components/handleTestV2</property>
+  <property name="sling.servlet.methods" type="String">GET</property>
+  <property name="sling.servlet.extensions" type="String">html</property>
+  <property name="sling.servlet.resourceSuperType" type="String" value="sling/bundle/resource"/>
+  <property name="service.description" type="String" value="Handle Test V2"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <implementation class="com.balentine.core.servlets.HandleBarsServlet"/>
+</scr:component>

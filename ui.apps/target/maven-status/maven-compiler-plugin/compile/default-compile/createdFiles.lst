@@ -1,0 +1,8 @@
+org\apache\sling\scripting\sightly\apps\balentine\components\xfpage\customheaderlibs__002e__html.class
+org\apache\sling\scripting\sightly\apps\balentine\components\xfpage\content__002e__html.class
+org\apache\sling\scripting\sightly\apps\balentine\components\helloworld\helloworld__002e__html.class
+org\apache\sling\scripting\sightly\apps\balentine\components\page\customheaderlibs__002e__html.class
+org\apache\sling\scripting\sightly\apps\balentine\components\page\customfooterlibs__002e__html.class
+org\apache\sling\scripting\sightly\apps\balentine\components\dbcheck\dbcheck__002e__html.class
+org\apache\sling\scripting\sightly\apps\balentine\components\xfpage\customfooterlibs__002e__html.class
+org\apache\sling\scripting\sightly\apps\balentine\components\colorpallete\colorpallete__002e__html.class

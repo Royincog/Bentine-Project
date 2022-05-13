@@ -1,0 +1,11 @@
+
+c
+java:S2095;"HUse try-with-resources or close this "Connection" in a "finally" clause.(ÆˆÓ˜øÿÿÿÿ
+c
+java:S2095,"HUse try-with-resources or close this "Connection" in a "finally" clause.(ÆˆÓ˜øÿÿÿÿ
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(è¶ô²úÿÿÿÿ
+o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Áç·¡
+P
+java:S1854=":Remove this useless assignment to local variable "someid".(¤§ã¡
+A
+java:S1481="+Remove this unused "someid" local variable.(¤§ã¡

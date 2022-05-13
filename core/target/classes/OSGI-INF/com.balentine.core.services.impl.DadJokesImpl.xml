@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.balentine.core.services.impl.DadJokesImpl" enabled="true" immediate="true" activate="init">
+  <service>
+    <provide interface="com.balentine.core.services.DadJokes"/>
+  </service>
+  <implementation class="com.balentine.core.services.impl.DadJokesImpl"/>
+</scr:component>

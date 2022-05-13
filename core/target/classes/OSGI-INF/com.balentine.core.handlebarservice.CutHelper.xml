@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.balentine.core.handlebarservice.CutHelper" enabled="true" immediate="true">
+  <service>
+    <provide interface="com.adobe.cq.social.handlebars.api.TemplateHelper"/>
+  </service>
+  <implementation class="com.balentine.core.handlebarservice.CutHelper"/>
+</scr:component>

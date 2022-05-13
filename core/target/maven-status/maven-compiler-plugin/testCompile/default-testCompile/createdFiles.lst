@@ -1,0 +1,5 @@
+com\balentine\core\models\HelloWorldModelTest.class
+com\balentine\core\filters\LoggingFilterTest.class
+com\balentine\core\schedulers\SimpleScheduledTaskTest.class
+com\balentine\core\listeners\SimpleResourceListenerTest.class
+com\balentine\core\servlets\SimpleServletTest.class

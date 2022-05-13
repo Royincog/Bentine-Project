@@ -1,0 +1,14 @@
+
+h
+java:S1854 "FRemove this useless assignment to local variable "modifiableValueMap".(³Ÿô¹ûÿÿÿÿ8äþ°ëˆ0
+“
+java:S1130"vRemove the declaration of thrown exception 'javax.jcr.RepositoryException', as it cannot be thrown from method's body.(ûÓõˆ8èþ°ëˆ0
+]	java:S125"<This block of commented-out lines of code should be removed.(ÅÝžêÿÿÿÿÿ8éþ°ëˆ0
+Y
+java:S1481 "7Remove this unused "modifiableValueMap" local variable.(³Ÿô¹ûÿÿÿÿ8êþ°ëˆ0
+q
+java:S1128"TRemove this unused import 'org.apache.jackrabbit.commons.xml.ParsingContentHandler'.(žºÆˆ8ëþ°ëˆ0
+V
+java:S1128"9Remove this unused import 'javax.jcr.ImportUUIDBehavior'.(§üžþ8ìþ°ëˆ0
+Q
+java:S1128"4Remove this unused import 'java.net.ContentHandler'.(¹Ø³É8ìþ°ëˆ0

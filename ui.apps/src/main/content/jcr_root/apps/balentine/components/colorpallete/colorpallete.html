@@ -1,0 +1,19 @@
+<style>
+.container {
+display : flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+.box{
+width: 100px;
+height: 50px;
+}
+</style>
+
+
+<sly data-sly-use.color = "com.balentine.core.models.ColorPalletteAdapters"></sly>
+<div class = "container">
+<sly data-sly-list.hexCode = "${color.colorPallette.colorCodes}">
+<div class = "box" style="background : #${hexCode @ context='styleToken'}"></div>
+</sly>
+</div>

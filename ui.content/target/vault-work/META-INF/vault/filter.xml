@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/balentine" mode="merge"/>
+    <filter root="/content/balentine" mode="merge"/>
+    <filter root="/content/dam/balentine/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/balentine" mode="merge"/>
+</workspaceFilter>

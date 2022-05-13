@@ -1,0 +1,4 @@
+com\balentine\it\tests\GetPageIT.class
+com\balentine\it\tests\CreatePageIT.class
+com\balentine\it\tests\PublishPageValidationIT.class
+com\balentine\it\tests\HtmlUnitClient.class

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 17
+Implementation-Title: balentine - All
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: container
+Content-Package-Id: com.balentine:balentine.all:1.0.0-SNAPSHOT
+Content-Package-Description: All content package for balentine
+Content-Package-Roots: /apps/balentine-packages,/apps/balentine-vendor-p
+ ackages
+
