@@ -1,8 +1,10 @@
 package com.balentine.core.servlets;
 
 
+import com.balentine.core.models.DogModel;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
@@ -17,7 +19,6 @@ import org.osgi.service.component.annotations.ReferencePolicy;
 import org.osgi.service.component.annotations.ReferencePolicyOption;
 import org.thymeleaf.ITemplateEngine;
 import org.thymeleaf.context.Context;
-import org.thymeleaf.context.IContext;
 import org.thymeleaf.context.WebContext;
 
 import javax.servlet.Servlet;
@@ -50,20 +51,28 @@ public class ThymeServletTest extends SlingSafeMethodsServlet {
         response.setContentType("text/html;charset=UTF-8");
         Map<String,Object> contextMap = new HashMap<>();
         contextMap.put("name","abcd");
-        Map<String,Object> dogMap = Collections.singletonMap("dog",new Dog("Pug","Vodafone"));
+
+
+
 
         Resource thymeResource = request.getResource();
         String template = thymeResource.getResourceType() + "/" + thymeResource.getName() + ".html"; //"balentine/components/thymeleafcomp/thymeleafcomp.html";
         log.info("The template string is " + template + " Dynamic template is " + request.getResource().getResourceType() + " Resource name " + request.getResource().getName());
 
 
-        final IContext context = new Context(Locale.ENGLISH,dogMap);
+        DogModel aDog = thymeResource.adaptTo(DogModel.class);
 
+        log.info("The info about dogModel " + aDog);
+
+        Map<String,Object> dogMap = Collections.singletonMap("dog",aDog);
+
+        log.info("Infor about another Dogmodel " + dogMap);
+
+        Context context = new Context(Locale.ENGLISH,dogMap);
+        context.setVariable("name","Thymeleaf");
 
 
         WebContext webContext = new WebContext(request,response,getServletContext());
-
-
 
 
         log.info("About the i templateEngine " + iTemplateEngine.toString());
@@ -77,7 +86,7 @@ public class ThymeServletTest extends SlingSafeMethodsServlet {
     }
 }
 
-
+@ToString
 class Dog {
     @Getter
     @Setter

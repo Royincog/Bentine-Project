@@ -11,8 +11,6 @@ n
 >core/src/main/java/com/balentine/core/models/package-info.java,8\c\8ce7fe367e7bbd6ac72ccb053f121e9d67155281
 v
 Fcore/src/main/java/com/balentine/core/restservices/HelloWorldImpl.java,7\5\75676a4b9be0e637ef8358d945c12fda532bffc6
-q
-Acore/src/main/java/com/balentine/core/models/HelloWorldModel.java,1\0\109afd7f86f2f34d887e06e300e1f5a2dab17898
 †
 Vui.apps/src/main/content/jcr_root/apps/balentine/components/helloworld/helloworld.html,b\a\ba61b302d7c0bbaeb4efc740fa6c5fdceb0e8020
 k
@@ -57,3 +55,5 @@ y
 Icore/src/main/java/com/balentine/core/restservices/FruitRestServices.java,d\c\dcaf9e42b9ea3115dd5806cc123b107e6068a3aa
 w
 Gcore/src/main/java/com/balentine/core/models/ColorPalletteAdapters.java,f\e\fe3dd52d92b69ecf752638f0e90bb1ddada94d85
+q
+Acore/src/main/java/com/balentine/core/models/impl/FruitModel.java,a\5\a53f17431f148bf71f71f02382a0f17f232c805d

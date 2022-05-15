@@ -7,6 +7,7 @@ com\balentine\core\handlebarservice\CutHelper.class
 com\balentine\core\models\impl\Demo.class
 com\balentine\core\restservices\HelloWorldImpl.class
 com\balentine\core\models\package-info.class
+com\balentine\core\models\DogModel.class
 com\balentine\core\servlets\Dog.class
 com\balentine\core\models\impl\FruitModel.class
 com\balentine\core\services\impl\ColorPalletteServiceImpl$1.class

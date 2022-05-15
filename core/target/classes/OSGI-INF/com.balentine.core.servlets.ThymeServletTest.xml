@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.balentine.core.servlets.ThymeServletTest">
+  <property name="sling.servlet.resourceTypes" type="String">balentine/components/thymeleafcomp</property>
+  <property name="sling.servlet.methods" type="String">GET</property>
+  <property name="sling.servlet.extensions" type="String">html</property>
+  <property name="sling.servlet.resourceSuperType" type="String" value="sling/bundle/resource"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="iTemplateEngine" policy="dynamic" interface="org.thymeleaf.ITemplateEngine" policy-option="greedy" field="iTemplateEngine"/>
+  <implementation class="com.balentine.core.servlets.ThymeServletTest"/>
+</scr:component>
