@@ -17,8 +17,6 @@ Acore/src/main/java/com/balentine/core/models/HelloWorldModel.java,1\0\109afd7f
 Vui.apps/src/main/content/jcr_root/apps/balentine/components/helloworld/helloworld.html,b\a\ba61b302d7c0bbaeb4efc740fa6c5fdceb0e8020
 k
 ;core/src/main/java/com/balentine/core/models/DateModel.java,6\d\6d3c93d6503dad2d83bd5a18c86013dd1b6833d6
-H
-core/ServiceAccount.json,6\0\60fd6956d7c14b62b6037304e02fe8eba9c60eb8
 k
 ;core/src/main/java/com/balentine/core/entities/DadJoke.java,1\6\1650aeba84d2bb44b29cacd3e6e4c62f5f83ed7c
 x
@@ -47,8 +45,6 @@ o
 ?core/src/main/java/com/balentine/core/entities/FruitObject.java,4\6\46ca87e8efe16739f38889ae24db7d4d5701a2b0
 q
 Acore/src/main/java/com/balentine/core/servlets/testhandlebar.html,9\e\9e019b8ae371d350b61900b09891bdc162223069
-q
-Acore/src/main/java/com/balentine/core/servlets/SimpleServlet.java,8\c\8cae8c060754329685625e2d3b6baa4c2f6cd039
 k
 ;core/src/main/java/com/balentine/core/models/impl/Demo.java,8\a\8a9222aa8a47e09038308bd03bbcc4e115496d57
 y
