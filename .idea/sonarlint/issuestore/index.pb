@@ -11,8 +11,6 @@ n
 >core/src/main/java/com/balentine/core/models/package-info.java,8\c\8ce7fe367e7bbd6ac72ccb053f121e9d67155281
 v
 Fcore/src/main/java/com/balentine/core/restservices/HelloWorldImpl.java,7\5\75676a4b9be0e637ef8358d945c12fda532bffc6
-†
-Vui.apps/src/main/content/jcr_root/apps/balentine/components/helloworld/helloworld.html,b\a\ba61b302d7c0bbaeb4efc740fa6c5fdceb0e8020
 k
 ;core/src/main/java/com/balentine/core/models/DateModel.java,6\d\6d3c93d6503dad2d83bd5a18c86013dd1b6833d6
 k
@@ -57,3 +55,9 @@ w
 Gcore/src/main/java/com/balentine/core/models/ColorPalletteAdapters.java,f\e\fe3dd52d92b69ecf752638f0e90bb1ddada94d85
 q
 Acore/src/main/java/com/balentine/core/models/impl/FruitModel.java,a\5\a53f17431f148bf71f71f02382a0f17f232c805d
+w
+G.idea/sonarlint/issuestore/a/5/a53f17431f148bf71f71f02382a0f17f232c805d,0\c\0c0ddffb130bd23dc154b8a9d9cc7f912f04fa56
+t
+Dcore/src/main/java/com/balentine/core/servlets/ThymeServletTest.java,6\7\67337a7dbd5b4969cf7a8a634931b9f16fa003bd
+d
+4ui.config/src/main/content/META-INF/vault/filter.xml,5\2\525fcb0409d23660a5e78dbc845ba10f5f19f698

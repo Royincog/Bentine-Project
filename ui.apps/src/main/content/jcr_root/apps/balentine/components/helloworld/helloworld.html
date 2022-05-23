@@ -13,6 +13,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */-->
+
+
+<sly data-sly-use.dogObj="com.balentine.core.models.impl.DogModel"></sly>
 <div class="cmp-helloworld" data-cmp-is="helloworld">
     <h2 class="cmp-helloworld__title">Hello World Component</h2>
     <div class="cmp-helloworld__item" data-sly-test="${properties.text}">
@@ -22,6 +25,7 @@
     <div class="cmp-helloworld__item" data-sly-use.model="com.balentine.core.models.HelloWorldModel" data-sly-test="${model.message}">
         <p class="cmp-helloworld__item-label">Model message:</p>
         <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${model.message}</pre>
-
     </div>
+
+
 </div>

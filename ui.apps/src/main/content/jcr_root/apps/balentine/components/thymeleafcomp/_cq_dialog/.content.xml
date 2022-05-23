@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <dogName
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Enter your Dog Name"
+                        name="./name"/>
+                    <dogBreed
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Enter your Dog Breed"
+                        name="./breed"/>
+                        <favouriteThings
+                         jcr:primaryType="nt:unstructured"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                         composite="{Boolean}false"
+                         fieldLabel="Enter your Dog's Favourite things"
+                        >
+                        <field
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        name="./favouriteThings"
+                        >
+                        <items jcr:primaryType="nt:unstructured">
+                            <favourites 
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            name="./favourites"
+                            />
+
+                        </items>
+
+                        </field>
+                        
+                        </favouriteThings>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

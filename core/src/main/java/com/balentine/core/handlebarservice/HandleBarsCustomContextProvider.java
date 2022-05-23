@@ -2,22 +2,18 @@ package com.balentine.core.handlebarservice;
 
 import com.adobe.cq.social.handlebars.api.TemplateContextProvider;
 import com.balentine.core.models.HandleBarV3ModelAdapter;
-import com.balentine.core.models.impl.HandleBarV3Model;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.jknack.handlebars.helper.StringHelpers;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.function.BiFunction;
 
 
 /*
@@ -60,6 +56,7 @@ public class HandleBarsCustomContextProvider implements TemplateContextProvider 
         this.handleBarV3Model = HandleBarV3Resource.adaptTo(HandleBarV3ModelAdapter.class);
 
       //  log.info("The model text from v3 is " + handleBarV3Model.toString());
+
         HashMap<String, Object> mapofModel = objectMapper.convertValue(handleBarV3Model, HashMap.class);
         log.info("The info about the Map object is " + mapofModel.toString());
         return mapofModel;

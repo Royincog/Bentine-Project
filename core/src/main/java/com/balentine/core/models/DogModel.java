@@ -11,6 +11,7 @@ import org.apache.sling.models.annotations.Model;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
+import java.util.Arrays;
 
 @Slf4j
 @ToString
@@ -27,11 +28,17 @@ public class DogModel {
     @Default(values = "someBreed")
     private String breed;
 
+    @Getter
+    @Inject
+    @Default(values = {"no dog"})
+    private String[] favourites;
+
     @PostConstruct
     private void init()
     {
         log.info("The values for Dog Name " + name);
         log.info("The values for Dog Breed " + breed);
+        log.info("The values for Dog favourites " + Arrays.asList(favourites).toString());
     }
     public Integer getDogNameLength(String name){
         return name.length();

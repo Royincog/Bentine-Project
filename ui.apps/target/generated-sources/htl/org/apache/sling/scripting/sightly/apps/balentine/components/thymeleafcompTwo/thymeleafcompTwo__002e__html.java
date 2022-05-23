@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  ******************************************************************************/
-package org.apache.sling.scripting.sightly.apps.balentine.components.page;
+package org.apache.sling.scripting.sightly.apps.balentine.components.thymeleafcompTwo;
 
 import java.io.PrintWriter;
 import java.util.Collection;
@@ -25,7 +25,7 @@ import javax.script.Bindings;
 import org.apache.sling.scripting.sightly.render.RenderUnit;
 import org.apache.sling.scripting.sightly.render.RenderContext;
 
-public final class customheaderlibs__002e__html extends RenderUnit {
+public final class thymeleafcompTwo__002e__html extends RenderUnit {
 
     @Override
     protected final void render(PrintWriter out,
@@ -34,26 +34,13 @@ public final class customheaderlibs__002e__html extends RenderUnit {
                                 RenderContext renderContext) {
 // Main Template Body -----------------------------------------------------------------------------
 
-Object _global_clientlib = null;
-out.write("\n");
-_global_clientlib = renderContext.call("use", "/libs/granite/sightly/templates/clientlib.html", obj());
-out.write("\n    ");
+Object _dynamic_currentstyle = bindings.get("currentstyle");
+out.write("<h2>Hey u</h2>\n<p>");
 {
-    Object var_templatevar0 = renderContext.getObjectModel().resolveProperty(_global_clientlib, "css");
-    {
-        String var_templateoptions1_field$_categories = "balentine.base";
-        {
-            java.util.Map var_templateoptions1 = obj().with("categories", var_templateoptions1_field$_categories);
-            callUnit(out, renderContext, var_templatevar0, var_templateoptions1);
-        }
-    }
+    Object var_0 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(renderContext.getObjectModel().resolveProperty(_dynamic_currentstyle, "design"), "staticCssPath"), "text");
+    out.write(renderContext.getObjectModel().toString(var_0));
 }
-out.write("\n\n\n");
-{
-    Object var_resourcecontent2 = renderContext.call("includeResource", "contexthub", obj().with("resourceType", "granite/contexthub/components/contexthub"));
-    out.write(renderContext.getObjectModel().toString(var_resourcecontent2));
-}
-out.write("\n");
+out.write("<p>");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------
