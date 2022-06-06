@@ -13,42 +13,55 @@ Export-Package: com.balentine.core.db;version="1.0";uses:="com.balenti
  els,com.github.jknack.handlebars,org.apache.sling.api",com.balentine.
  core.listeners;version="1.0";uses:="org.osgi.service.event",com.balen
  tine.core.models;version="1.0";uses:="com.balentine.core.entities,jav
- ax.annotation,org.apache.sling.api,org.apache.sling.api.resource,org.
- apache.sling.models.annotations,org.apache.sling.models.annotations.i
- njectorspecific,org.joda.time",com.balentine.core.restservices;versio
- n="1.0";uses:="com.balentine.core.entities,javax.ws.rs,javax.ws.rs.co
- re",com.balentine.core.schedulers;version="1.0",com.balentine.core.se
- rvlets;version="1.0";uses:="javax.servlet,org.apache.sling.api,org.ap
- ache.sling.api.servlets"
+ ax.annotation,javax.inject,org.apache.sling.api,org.apache.sling.api.
+ resource,org.apache.sling.models.annotations,org.apache.sling.models.
+ annotations.injectorspecific,org.joda.time",com.balentine.core.nebamo
+ dels;version="1.0";uses:="com.balentine.core.springservice,com.faster
+ xml.jackson.core,io.neba.api.annotations,javax.jcr,org.apache.sling.a
+ pi.resource,org.springframework.context.annotation,org.springframewor
+ k.stereotype,org.springframework.web.bind.annotation",com.balentine.c
+ ore.restservices;version="1.0";uses:="com.balentine.core.entities,jav
+ ax.ws.rs,javax.ws.rs.core",com.balentine.core.schedulers;version="1.0
+ ",com.balentine.core.servlets;version="1.0";uses:="javax.servlet,org.
+ apache.sling.api,org.apache.sling.api.servlets",com.balentine.core.sp
+ ringservice;version="1.0";uses:="org.springframework.context.annotati
+ on,org.springframework.stereotype"
 Import-Package: javax.annotation;version="0.0.0",com.adobe.acs.commons
  .models.injectors.annotation;version="[3.6,4)",com.adobe.cq.social.ha
- ndlebars.api;version="[0.0,1)",com.balentine.core.db;version="[1.0,2)
- ",com.balentine.core.entities;version="[1.0,2)",com.balentine.core.fi
- lters;version="[1.0,2)",com.balentine.core.handlebarservice;version="
- [1.0,2)",com.balentine.core.listeners;version="[1.0,2)",com.balentine
- .core.restservices;version="[1.0,2)",com.balentine.core.schedulers;ve
- rsion="[1.0,2)",com.balentine.core.servlets;version="[1.0,2)",com.day
- .commons.datasource.poolservice;version="[1.1,2)",com.day.cq.dam.api;
- version="[1.28,2)",com.day.cq.dam.commons.util;version="[1.60,2)",com
- .day.cq.wcm.api;version="[1.29,2)",com.fasterxml.jackson.core;version
- ="[2.11,3)",com.fasterxml.jackson.core.type;version="[2.11,3)",com.fa
- sterxml.jackson.databind;version="[2.11,3)",com.fasterxml.jackson.dat
- abind.node;version="[2.11,3)",com.github.jknack.handlebars;version="[
- 4.0,5)",com.github.jknack.handlebars.helper;version="[4.0,5)",javax.i
- nject;version="[1.0,2)",javax.jcr;version="[2.0,3)",javax.servlet;ver
- sion="[3.1,4)",javax.servlet.http;version="[3.1,4)",javax.sql,javax.w
- s.rs;version="[2.0,3)",javax.ws.rs.core;version="[2.0,3)",kong.unires
- t,org.apache.commons.compress.utils;version="[1.20,2)",org.apache.com
- mons.dbutils;version="[1.7,2)",org.apache.commons.dbutils.handlers;ve
- rsion="[1.7,2)",org.apache.sling.api;version="[2.3,3)",org.apache.sli
- ng.api.request;version="[2.4,3)",org.apache.sling.api.resource;versio
- n="[2.12,3)",org.apache.sling.api.servlets;version="[2.3,3)",org.apac
- he.sling.models.annotations;version="[1.5,2)",org.apache.sling.models
- .annotations.injectorspecific;version="[1.1,2)",org.joda.time;version
- ="[2.9,3)",org.jsoup.nodes;version="[1.14,2)",org.jsoup.parser;versio
- n="[1.14,2)",org.osgi.service.event;version="[1.3,2)",org.slf4j;versi
- on="[1.7,2)",org.thymeleaf;version="[3.0,4)",org.thymeleaf.context;ve
- rsion="[3.0,4)"
+ ndlebars.api;version="[0.0,1)",com.adobe.cq.wcm.core.components.model
+ s;version="[12.21,13)",com.balentine.core.db;version="[1.0,2)",com.ba
+ lentine.core.entities;version="[1.0,2)",com.balentine.core.filters;ve
+ rsion="[1.0,2)",com.balentine.core.handlebarservice;version="[1.0,2)"
+ ,com.balentine.core.listeners;version="[1.0,2)",com.balentine.core.re
+ stservices;version="[1.0,2)",com.balentine.core.schedulers;version="[
+ 1.0,2)",com.balentine.core.servlets;version="[1.0,2)",com.balentine.c
+ ore.springservice;version="[1.0,2)",com.day.commons.datasource.poolse
+ rvice;version="[1.1,2)",com.day.cq.dam.api;version="[1.28,2)",com.day
+ .cq.dam.commons.util;version="[1.60,2)",com.day.cq.wcm.api;version="[
+ 1.29,2)",com.fasterxml.jackson.core;version="[2.11,3)",com.fasterxml.
+ jackson.core.type;version="[2.11,3)",com.fasterxml.jackson.databind;v
+ ersion="[2.11,3)",com.fasterxml.jackson.databind.node;version="[2.11,
+ 3)",com.github.jknack.handlebars;version="[4.0,5)",com.github.jknack.
+ handlebars.helper;version="[4.0,5)",com.google.gson;version="[2.8,3)"
+ ,io.neba.api.annotations;version="[5.1,6)",javax.inject;version="[1.0
+ ,2)",javax.jcr;version="[2.0,3)",javax.servlet;version="[3.1,4)",java
+ x.sql,javax.ws.rs;version="[2.0,3)",javax.ws.rs.core;version="[2.0,3)
+ ",kong.unirest,org.apache.commons.compress.utils;version="[1.20,2)",o
+ rg.apache.commons.dbutils;version="[1.7,2)",org.apache.commons.dbutil
+ s.handlers;version="[1.7,2)",org.apache.sling.api;version="[2.3,3)",o
+ rg.apache.sling.api.request;version="[2.4,3)",org.apache.sling.api.re
+ source;version="[2.12,3)",org.apache.sling.api.servlets;version="[2.3
+ ,3)",org.apache.sling.models.annotations;version="[1.5,2)",org.apache
+ .sling.models.annotations.injectorspecific;version="[1.1,2)",org.joda
+ .time;version="[2.9,3)",org.jsoup.nodes;version="[1.14,2)",org.jsoup.
+ parser;version="[1.14,2)",org.osgi.service.event;version="[1.4,2)",or
+ g.slf4j;version="[1.7,2)",org.springframework.beans.factory.annotatio
+ n;version="[5.3,6)",org.springframework.context.annotation;version="[
+ 5.3,6)",org.springframework.stereotype;version="[5.3,6)",org.springfr
+ amework.web.bind.annotation;version="[5.3,6)",org.thymeleaf;version="
+ [3.0,4)",org.thymeleaf.context;version="[3.0,4)"
+Meta-Persistence: OSGI-INF/persistence.xml
+Neba-Packages: com.balentine.core.nebamodels
 Private-Package: com.balentine.core.models.impl,com.balentine.core.ser
  vices,com.balentine.core.services.impl
 Provide-Capability: osgi.service;objectClass:List<String>="com.adobe.c
@@ -64,11 +77,13 @@ Provide-Capability: osgi.service;objectClass:List<String>="com.adobe.c
  String>="com.balentine.core.services.ColorPalletteService";uses:="com
  .balentine.core.services",osgi.service;objectClass:List<String>="com.
  balentine.core.services.DadJokes";uses:="com.balentine.core.services"
- ,osgi.service;objectClass:List<String>="java.lang.Runnable",osgi.serv
- ice;objectClass:List<String>="javax.servlet.Filter";uses:="javax.serv
- let",osgi.service;objectClass:List<String>="javax.servlet.Servlet";us
- es:="javax.servlet",osgi.service;objectClass:List<String>="org.osgi.s
- ervice.event.EventHandler";uses:="org.osgi.service.event"
+ ,osgi.service;objectClass:List<String>="com.balentine.core.services.H
+ ybridSpringService";uses:="com.balentine.core.services",osgi.service;
+ objectClass:List<String>="java.lang.Runnable",osgi.service;objectClas
+ s:List<String>="javax.servlet.Filter";uses:="javax.servlet",osgi.serv
+ ice;objectClass:List<String>="javax.servlet.Servlet";uses:="javax.ser
+ vlet",osgi.service;objectClass:List<String>="org.osgi.service.event.E
+ ventHandler";uses:="org.osgi.service.event"
 Require-Capability: osgi.service;filter:="(objectClass=com.balentine.c
  ore.db.TestDbConnection)";effective:=active,osgi.service;filter:="(ob
  jectClass=com.day.commons.datasource.poolservice.DataSourcePool)";eff
@@ -87,13 +102,15 @@ Service-Component: OSGI-INF/TestDB-Connection.xml,OSGI-INF/com.balenti
  s.FruitRestServices.xml,OSGI-INF/com.balentine.core.restservices.Hell
  oWorldImpl.xml,OSGI-INF/com.balentine.core.schedulers.SimpleScheduled
  Task.xml,OSGI-INF/ColorPaletteService.xml,OSGI-INF/com.balentine.core
- .services.impl.DadJokesImpl.xml,OSGI-INF/com.balentine.core.servlets.
- HandleBarsServlet.xml,OSGI-INF/com.balentine.core.servlets.SimpleServ
- let.xml,OSGI-INF/com.balentine.core.servlets.ThymeServletTest.xml
-Sling-Model-Classes: com.balentine.core.models.DateModel,com.balentine
- .core.models.DogModel,com.balentine.core.models.HelloWorldModel,com.b
- alentine.core.models.impl.ColorPalletteModel,com.balentine.core.model
- s.impl.FruitModel,com.balentine.core.models.impl.GetFruitsModelImpl,c
- om.balentine.core.models.impl.HandleBarV3Model,com.balentine.core.mod
- els.impl.ModelToJsonImpl
+ .services.impl.DadJokesImpl.xml,OSGI-INF/com.balentine.core.services.
+ impl.HybridSpringServiceImpl.xml,OSGI-INF/com.balentine.core.servlets
+ .HandleBarsServlet.xml,OSGI-INF/com.balentine.core.servlets.SimpleSer
+ vlet.xml,OSGI-INF/com.balentine.core.servlets.ThymeServletTest.xml
+Sling-Model-Classes: com.balentine.core.models.AbstractModel,com.balen
+ tine.core.models.DateModel,com.balentine.core.models.DogModel,com.bal
+ entine.core.models.HelloWorldModel,com.balentine.core.models.impl.Col
+ orPalletteModel,com.balentine.core.models.impl.ExperienceFragmentDele
+ gate,com.balentine.core.models.impl.FruitModel,com.balentine.core.mod
+ els.impl.GetFruitsModelImpl,com.balentine.core.models.impl.HandleBarV
+ 3Model,com.balentine.core.models.impl.ModelToJsonImpl
 

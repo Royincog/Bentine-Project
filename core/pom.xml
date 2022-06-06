@@ -26,6 +26,9 @@
     <artifactId>balentine.core</artifactId>
     <name>balentine - Core</name>
     <description>Core bundle for balentine</description>
+    <properties>
+        <spring.version>5.3.18_1</spring.version>
+    </properties>
     <build>
         <plugins>
             <plugin>
@@ -44,6 +47,8 @@
                         <configuration>
                             <bnd><![CDATA[
 Import-Package: javax.annotation;version=0.0.0,*
+Meta-Persistence: OSGI-INF/persistence.xml
+Neba-Packages: com.balentine.core.nebamodels
                                 ]]></bnd>
                         </configuration>
                     </execution>
@@ -77,6 +82,7 @@ Import-Package: javax.annotation;version=0.0.0,*
                     </archive>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
@@ -87,6 +93,22 @@ Import-Package: javax.annotation;version=0.0.0,*
             <scope>test</scope>
         </dependency>
         <!-- OSGi Dependencies -->
+        <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>osgi.core</artifactId>
+        </dependency>
+
+        <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>osgi.cmpn</artifactId>
+        </dependency>
+
+        <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>osgi.annotation</artifactId>
+        </dependency>
+
+
         <dependency>
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.annotation.versioning</artifactId>
@@ -288,7 +310,58 @@ Import-Package: javax.annotation;version=0.0.0,*
             <artifactId>org.apache.servicemix.bundles.thymeleaf</artifactId>
             <version>3.0.9.RELEASE_1</version>
         </dependency>
-
-
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-osgi -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-osgi</artifactId>
+            <version>5.4.33</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.30</version>
+        </dependency>
+        <dependency>
+            <groupId>io.neba</groupId>
+            <artifactId>io.neba.neba-delivery-sling</artifactId>
+            <version>5.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.spring-context</artifactId>
+            <version>${spring.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.spring-core</artifactId>
+            <version>${spring.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.spring-context-support</artifactId>
+            <version>${spring.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.spring-web</artifactId>
+            <version>${spring.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <artifactId>gemini-blueprint-extensions</artifactId>
+            <version>3.0.0.M01</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>

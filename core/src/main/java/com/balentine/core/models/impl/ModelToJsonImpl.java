@@ -1,4 +1,5 @@
 package com.balentine.core.models.impl;
+
 import com.balentine.core.models.ModelToJsonAdapter;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -6,9 +7,9 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.sling.api.resource.Resource;
-import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
+
 import javax.annotation.PostConstruct;
 import javax.inject.Named;
 
@@ -39,6 +40,7 @@ public class ModelToJsonImpl implements ModelToJsonAdapter{
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
+
         return jsonString;
     }
 

@@ -1,0 +1,14 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             version="1.0">
+    <persistence-unit name="managedbalentine-jpa" transaction-type="JTA">
+        <jta-data-source>osgi:service/com.day.commons.datasource.jdbcpool.JdbcPoolService.12a54c81-9dae-492a-97ce-583faab42711/(datasource.svc.name=testservice)</jta-data-source>
+        <properties>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+        </properties>
+    </persistence-unit>
+</persistence>

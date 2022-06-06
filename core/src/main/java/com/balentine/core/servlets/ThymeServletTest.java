@@ -19,13 +19,11 @@ import org.osgi.service.component.annotations.ReferencePolicy;
 import org.osgi.service.component.annotations.ReferencePolicyOption;
 import org.thymeleaf.ITemplateEngine;
 import org.thymeleaf.context.Context;
-import org.thymeleaf.context.WebContext;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import java.io.IOException;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
@@ -42,25 +40,24 @@ import java.util.Map;
 )
 public class ThymeServletTest extends SlingSafeMethodsServlet {
 
+
     @Reference(policy= ReferencePolicy.DYNAMIC, policyOption = ReferencePolicyOption.GREEDY)
     private volatile ITemplateEngine iTemplateEngine;
 
 
     @Override
     protected void doGet(@NotNull SlingHttpServletRequest request, @NotNull SlingHttpServletResponse response) throws ServletException, IOException {
+
         response.setContentType("text/html;charset=UTF-8");
-        Map<String,Object> contextMap = new HashMap<>();
-        contextMap.put("name","abcd");
 
 
-
-
-        Resource thymeResource = request.getResource();
+        Resource thymeResource = request.getResource(); //Get the resource from Request !!
         String template = thymeResource.getResourceType() + "/" + thymeResource.getName() + ".html"; //"balentine/components/thymeleafcomp/thymeleafcomp.html";
+
         log.info("The template string is " + template + " Dynamic template is " + request.getResource().getResourceType() + " Resource name " + request.getResource().getName());
 
 
-        DogModel aDog = thymeResource.adaptTo(DogModel.class);
+        DogModel aDog = thymeResource.adaptTo(DogModel.class); //Adapt the resource to the Model !! .
 
         log.info("The info about dogModel " + aDog);
 
@@ -69,10 +66,10 @@ public class ThymeServletTest extends SlingSafeMethodsServlet {
         log.info("Infor about another Dogmodel " + dogMap);
 
         Context context = new Context(Locale.ENGLISH,dogMap);
-        context.setVariable("name","Thymeleaf");
+        context.setVariable("name","Thymeleaf");  //Setting the context //FOr DRY use a MAP
 
 
-        WebContext webContext = new WebContext(request,response,getServletContext());
+
 
 
         log.info("About the i templateEngine " + iTemplateEngine.toString());
